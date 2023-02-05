@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <TestPage /> -->
+  <!-- <CounterComponent /> -->
+  <ColourPickerGame />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import TestPage from './components/TestPage.vue'
+// import CounterComponent from './components/CounterComponent.vue'
+import ColourPickerGame from './components/ColourPickerGame.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // TestPage,
+    // CounterComponent,
+    ColourPickerGame
   }
 }
 </script>
