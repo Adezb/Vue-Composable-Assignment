@@ -1,7 +1,9 @@
 <template>
   <!-- <TestPage /> -->
   <!-- <CounterComponent /> -->
-  <ColourPickerGame />
+  <div id="app">
+    <ColourPickerGame />
+  </div>
 </template>
 
 <script>

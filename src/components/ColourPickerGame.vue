@@ -1,9 +1,9 @@
 <template>
     <h1>Colour Picker Game</h1>
 
-    <div>{{ message }}</div>
+    <div class="msg">{{ message }}</div>
 
-    <button v-for="color in colors" :key="color" @click="matchColor(color)">{{ color }}</button>
+    <button class="btn" v-for="color in colors" :key="color" @click="matchColor(color)">{{ color }}</button>
 
 </template>
 
@@ -30,5 +30,24 @@ export default {
 </script>
 
 <style>
+.msg {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.btn {
+    background-color: #adb1ad;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 </style>

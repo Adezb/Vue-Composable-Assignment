@@ -9,11 +9,11 @@ const useColorPicker = () => {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
 
     if (colors[randomNumber] === value) {
-      message.value = `You win... [answer: ${colors[randomNumber]}]`;
+      message.value = `You Win... [Answer: ${colors[randomNumber]}]`;
       return;
     }
 
-    message.value = `You Loose... [answer: ${colors[randomNumber]}]`;
+    message.value = `You Loose... [Answer: ${colors[randomNumber]}]`;
   };
 
   return { colors, message, matchColor };
